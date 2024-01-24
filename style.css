@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;   
+  }
+
+  html,body{
+    height:100%;
+    width:100%;
+  }
+
+.container{
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
+   
+}
+
+.sidebar{
+    background-color: brown;
+    grid-row: 1 / span 2;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header{
+    background-color: blueviolet;
+    grid-column-start: 2;
+}
+
+.content{
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
