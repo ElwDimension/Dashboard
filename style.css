@@ -23,6 +23,8 @@
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+
+    align-items:start;
 }
 
 .header{
@@ -34,4 +36,27 @@
     background-color: aqua;
     grid-column-start: 2;
     grid-row-start: 2;
+
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects{
+    grid-column-start: 1;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+    gap:15px;
+}
+
+.projectcard{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+}
+
+.announcements, .trending{
+    grid-column-start: 2;
 }
