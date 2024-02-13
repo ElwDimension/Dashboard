@@ -30,6 +30,21 @@
 .header{
     background-color: blueviolet;
     grid-column-start: 2;
+
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.headerTop{
+    grid-row-start: 1;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+}
+
+.headerBottom{
+    grid-row-start: 2;
 }
 
 .content{
@@ -44,7 +59,7 @@
 .projects{
     grid-column-start: 1;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     
     gap:15px;
