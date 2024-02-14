@@ -18,14 +18,27 @@
 
 .sidebar{
     background-color: brown;
+    color: white;
+    font-weight: bold;
     grid-row: 1 / span 2;
 
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr ;
     grid-template-columns: 1fr;
 
-    align-items:start;
+    
 }
+
+.sidebar div{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.sidebar div div{
+    padding: 10px
+}
+
+
 
 .header{
     background-color: blueviolet;
