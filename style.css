@@ -60,6 +60,23 @@
     grid-template-columns: auto;
 }
 
+.right{
+    grid-row-start: 1;
+    grid-column-start: -1;
+    justify-self:end;
+    
+    padding-top:25px;
+}
+
+.left{
+    padding-top: 25px;
+    padding-left:25px;
+}
+
+#bar{
+    width:850px;
+}
+
 .headerBottom{
     grid-row-start: 2;
 }
