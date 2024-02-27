@@ -57,15 +57,20 @@
     grid-row-start: 1;
     display:grid;
     grid-template-rows: 1fr;
-    grid-template-columns: auto;
+    grid-template-columns: 2fr 1fr;
 }
 
 .right{
     grid-row-start: 1;
-    grid-column-start: -1;
+    grid-column-start: 2;
     justify-self:end;
     align-self:center;
     padding-right: 25px;
+}
+
+.right img, .right span{
+    margin-right:30px;
+    align-self:center;
 }
 
 .left{
