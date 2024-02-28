@@ -20,7 +20,7 @@
     background-color: brown;
     color: white;
     font-weight: bold;
-    grid-row: 1 / span 2;
+    grid-row: 1 / p 2;
 
     display:grid;
     grid-template-rows: 100px 1fr ;
@@ -63,23 +63,29 @@
 .right{
     grid-row-start: 1;
     grid-column-start: 2;
-    justify-self:end;
-    align-self:center;
-    padding-right: 25px;
+    justify-self: end;
+    margin-right:25px;
 }
 
-.right img, .right span{
-    margin-right:30px;
-    align-self:center;
+.right p{
+    display:inline;
 }
+
 
 .left{
     padding-left:25px;
     align-self:center;
 }
 
+.left button{ 
+    border:0;
+    background:transparent;
+    margin-right: 20px;
+}
+
 #bar{
     width:850px;
+     border-radius: 20px;
 }
 
 .headerBottom{
@@ -126,7 +132,8 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    
+    margin-left:25px;
+    margin-top:25px;
     gap:15px;
 }
 
@@ -137,6 +144,6 @@
     border-radius: 4px;
 }
 
-.announcements, .trending{
+.news{
     grid-column-start: 2;
 }
