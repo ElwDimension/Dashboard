@@ -125,6 +125,7 @@
 
     display:grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px auto;
 }
 
 .projects{
@@ -133,7 +134,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin-left:25px;
-    margin-top:25px;
+    
     gap:15px;
 }
 
