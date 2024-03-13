@@ -63,29 +63,40 @@
 .right{
     grid-row-start: 1;
     grid-column-start: 2;
-    justify-self: end;
-    margin-right:25px;
+    justify-self: center;
+    
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items:center;
+    justify-items:center;
 }
 
 .right p{
     display:inline;
+    font-size: larger; 
+    font-weight:bold;
 }
 
 
 .left{
     padding-left:25px;
     align-self:center;
+    
+    
 }
 
 .left button{ 
     border:0;
     background:transparent;
     margin-right: 20px;
+    margin-left:10px;
 }
 
 #bar{
-    width:850px;
+    width:70%;
      border-radius: 20px;
+    height:2em
 }
 
 .headerBottom{
@@ -104,6 +115,13 @@
     grid-column-start: 2;
     display:grid;
     grid-template-rows: 1fr 1fr;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+.hi{
+    font-size:medium;
+    align-self:center;
 }
 
 .buttons{
@@ -114,8 +132,9 @@
 .buttons button{
     margin-left:80px;
     border-radius: 20px;
-    width:150px;
-    height:40px;
+    width:20%;
+    height:2.5em;
+    font-size:large;
 }
 
 .content{
@@ -132,8 +151,9 @@
     grid-column-start: 1;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(3,1fr) 50px;
     margin-left:25px;
+    margin-right:25px;
     
     gap:15px;
 }
@@ -143,8 +163,61 @@
     border: 1px solid black;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
+  
+    display:grid;
+    grid-template-rows: 50px .5fr 1fr;
+}
+
+.projectcard p{
+    align-self:end;
+    font-size:large;
+    font-weight:bold;
+    margin-left:5%;
+}
+
+.summary{
+    font-size: medium;
+    
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.icons{
+    align-self:center;
+    justify-self:end;
+    margin-right:5%;
+}
+
+.icons img{
+    margin-left:15px;
 }
 
 .news{
     grid-column-start: 2;
+    grid-row-start:1;
+    display:grid;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+.announcements{
+    grid-row-start: 2;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+}
+
+.announce{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.trending{
+    grid-row-start:4;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
 }
