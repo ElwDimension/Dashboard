@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0;   
+    padding: 0; 
+    font-family: Montserrat;
   }
 
   html,body{
@@ -75,7 +76,7 @@
 .right p{
     display:inline;
     font-size: larger; 
-    font-weight:bold;
+    font-weight: 600;
 }
 
 
@@ -115,13 +116,14 @@
     grid-column-start: 2;
     display:grid;
     grid-template-rows: 1fr 1fr;
-    font-size:1.5em;
-    font-weight:bold;
+    font-size:2em;
+    font-weight:600;
+    margin-bottom:30px;
 }
 
 .hi{
     font-size:medium;
-    align-self:center;
+    align-self:end;
 }
 
 .buttons{
@@ -135,6 +137,7 @@
     width:20%;
     height:2.5em;
     font-size:large;
+    font-weight:600;
 }
 
 .content{
@@ -147,6 +150,17 @@
     grid-template-rows: 50px auto;
 }
 
+.content span{
+    font-size:larger;
+    font-weight:600;
+    align-self:end;
+    margin-bottom:5px;
+}
+
+.content span:only-of-type{
+    margin-left:25px;
+}
+
 .projects{
     grid-column-start: 1;
     display:grid;
@@ -157,6 +171,8 @@
     
     gap:15px;
 }
+
+
 
 .projectcard{
     background-color: white;
@@ -171,7 +187,7 @@
 .projectcard p{
     align-self:end;
     font-size:large;
-    font-weight:bold;
+    font-weight:600;
     margin-left:5%;
 }
 
@@ -205,6 +221,7 @@
     border: 1px solid black;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
+     margin-right:25px;
 }
 
 .announce{
@@ -212,6 +229,7 @@
     grid-template-rows: 1fr 1fr;
     margin-top:15px;
     margin-bottom:15px;
+   
 }
 
 .trending{
@@ -220,4 +238,25 @@
     border: 1px solid black;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
+     margin-right:25px;
+    align-self:end;
+}
+
+.trend{
+    display:grid;
+    grid-template-columns: 110px 1fr;
+    align-items:center;
+    justify-items:end;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+
+.trendInfo{
+    justify-self:start;
+    margin-left:15px;
+}
+
+.trendInfo p:first-child{
+    font-weight:500;
 }
